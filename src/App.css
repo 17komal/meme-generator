@@ -1,38 +1,119 @@
 .App {
-  text-align: center;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/*------------------------------NAVBAR-------------------------------------*/
+
+.nav {
+  height: 75px;
+  width: 100%;
+  background: linear-gradient(309deg, rgba(34, 193, 195, 1) 0%, rgba(192, 252, 134, 1) 100%);
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-left {
   display: flex;
-  flex-direction: column;
+
+}
+
+.logo_img {
+  height: 60px;
+  margin: 10px;
+
+}
+
+.logo_title {
+  font-size: 25px;
+  font-family: cursive;
+  padding: 15px 0px;
+}
+
+/*------------------------------Form-------------------------------------*/
+
+.form_card {
+  padding: 10px 10px 0 10px;
+}
+
+.container-color {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 1em;
+  width: 100%;
+  border-radius: 7%;
+
+}
+
+
+input[type="color"] {
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.color-picker-text {
+  padding-left: 10px;
+}
+
+#color-picker::-webkit-color-swatch {
+  border-radius: 100%;
+}
+
+.meme_img {
+  margin: 3% 10% 0% 10%;
+  padding: 2% 0px;
+  background-color: black;
+
+}
+
+.meme-image {
+  width: 50px;
+}
+
+.meme_img img {
+  height: 450px;
+  width: 100%;
+
+}
+
+.head-text {
+  position: relative;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.meme_text_top {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  color: #fff;
+  word-wrap: break-word;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.meme_text_bottom {
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+  color: #fff;
+}
+
+@media only screen and (max-width: 750px) {
+
+  /*------------------------------NAVBAR-------------------------------------*/
+  .logo_img {
+    height: 55px !important;
+
   }
-  to {
-    transform: rotate(360deg);
+
+  .logo_title {
+    font-size: 20px !important;
+
+  }
+
+  .meme_img img {
+    height: 300px;
+    width: 1300% !important;
+  
   }
 }
